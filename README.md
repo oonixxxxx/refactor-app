@@ -11,7 +11,7 @@ This is a simple web application that takes code as input and returns refactored
 
 1. Clone the repository:
 
-   bash```
+   ```
    git clone <https://github.com/yourusername/code-refactor.git>
    cd code-refactor
    ```
