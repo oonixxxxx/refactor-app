@@ -1,55 +1,103 @@
-# Code Refactor Web App
+# Refactor App
 
-This is a simple web application that takes code as input and returns refactored code.
+Этот репозиторий содержит проект по рефакторингу кода. Основная цель — улучшение читаемости, производительности и поддерживаемости существующего кода.
 
-## Features
+## Описание
 
-- Refactor Python code by removing unused imports.
-- Simple web interface for input and output.
+Проект представляет собой приложение, которое было подвергнуто рефакторингу для улучшения его структуры и качества кода. В процессе рефакторинга были применены различные техники, такие как:
 
-## Installation
+- Устранение дублирования кода.
+- Улучшение именования переменных и функций.
+- Оптимизация алгоритмов.
+- Разделение кода на модули и компоненты.
+- Улучшение тестируемости кода.
 
-1. Clone the repository:
+## Установка и запуск
 
+Для запуска проекта на локальной машине выполните следующие шаги:
+
+1. **Клонируйте репозиторий:**
+
+   ```bash
+   git clone https://github.com/oonixxxxx/refactor-app.git
+   cd refactor-app
    ```
-   git clone <https://github.com/yourusername/code-refactor.git>
-   cd code-refactor
+
+2. **Установите зависимости:**
+
+   Если проект использует `npm`:
+
+   ```bash
+   npm install
    ```
 
-Install dependencies:
+   Или если используется `yarn`:
+
+   ```bash
+   yarn install
+   ```
+
+3. **Запустите проект:**
+
+   ```bash
+   npm start
+   ```
+
+   или
+
+   ```bash
+   yarn start
+   ```
+
+   Проект будет доступен по адресу `http://localhost:3000` (или другому порту, в зависимости от конфигурации).
+
+## Структура проекта
 
 ```
-pip install -r requirements.txt
+refactor-app/
+├── src/                  # Исходный код приложения
+│   ├── components/       # Компоненты приложения
+│   ├── utils/            # Вспомогательные функции и утилиты
+│   ├── styles/           # Стили и CSS-файлы
+│   ├── App.js            # Основной компонент приложения
+│   └── index.js          # Точка входа в приложение
+├── public/               # Статические файлы
+├── tests/                # Тесты
+├── package.json          # Зависимости и скрипты
+└── README.md             # Документация
 ```
 
-Run the application:
+## Тестирование
 
-```
-python app.py
-```
+Для запуска тестов используйте команду:
 
-Open your browser and go to:
-
-```
-<http://127.0.0.1:5000>
+```bash
+npm test
 ```
 
-Running with Docker
-Build and run the Docker container:
+или
 
-```
-docker-compose up --build
-```
-
-Open your browser and go to:
-
-```
-<http://localhost:5000>
+```bash
+yarn test
 ```
 
-Testing
-Run the tests with:
+## Вклад в проект
 
-```
-python -m unittest test_backend.py
-```
+Если вы хотите внести свой вклад в проект, пожалуйста, следуйте следующим шагам:
+
+1. Форкните репозиторий.
+2. Создайте новую ветку (`git checkout -b feature/YourFeatureName`).
+3. Внесите изменения и закомитьте их (`git commit -m 'Add some feature'`).
+4. Запушьте изменения в ваш форк (`git push origin feature/YourFeatureName`).
+5. Создайте Pull Request.
+
+## Лицензия
+
+Этот проект распространяется под лицензией MIT. Подробнее см. в файле [LICENSE](LICENSE).
+
+## Контакты
+
+Если у вас есть вопросы или предложения, свяжитесь со мной:
+
+- **Email:** your.email@example.com
+- **GitHub:** [oonixxxxx](https://github.com/oonixxxxx)
